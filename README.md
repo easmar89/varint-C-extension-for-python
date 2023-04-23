@@ -1,10 +1,11 @@
 # cvarint - A C Extension for Python
 
-After having implemented protobuf varint with python [here](https://github.com/easmar89/protobuf-varint), it was time to step up the challenge and implement a C extension for Python that implements varint encoding and decoding. The primary purpose of this exercise is to provide a learning opportunity for understanding and exploring various aspects of software development, such as:
+After having implemented protobuf varint with python [here](https://github.com/easmar89/protobuf-varint), it was time to step up the challenge and implement a C extension for Python that implements varint encoding and decoding. The primary purpose of this exercise is to provide a learning opportunity for understanding and exploring various aspects such as:
 
-- Reading and understanding large codebases (CPython)
+- Reading and navigating large codebases (CPython)
+- Understanding the relationship between C and Python, and how Python built-in functions map to C functions under the hood.
 - Building and working with C extensions for Python
-- Enhancing performance of a Python program through C extensions, as indicated in the results below.
+- Observing the performance gains provided by C, and understanding why some functionalities are better implemented with C extensions instead of using raw Python, especially when better performance is required.
 
 ## Overview
 
@@ -22,8 +23,10 @@ Running speed test...
 Executed 1,000,000 random tests
 
 Python:	  3289ns per case (3.289s total)
-C:	      952ns per case (0.952s total)
+C:	   952ns per case (0.952s total)
 ```
+
+<br>
 
 ## References:
 
